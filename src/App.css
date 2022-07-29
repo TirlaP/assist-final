@@ -1,0 +1,142 @@
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+.container{
+  display:flex;
+}
+main{
+  width: 100%;
+  padding: 20px;
+}
+.sidebar{
+  position: fixed;
+  background: #347ab4;
+  color: #fff;
+  height: 100vh;
+  width: 230px;
+  transition: all 0.5s;
+}
+.top_section{
+  display: flex;
+  align-items:center;
+  padding:20px 15px;
+}
+.logo{
+  font-size: 30px;
+  padding-right: 20px;
+}
+.bars{
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+.link{
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+}
+.link:hover{
+  background:lightskyblue;
+  color: #000;
+  transition: all 0.5s;
+}
+.active{
+  background: lightskyblue;
+  color: #000;
+}
+.icon, .link_text{
+  font-size: 20px;
+}
+.about {
+  width: 200px;
+  height: 600px;  
+
+  position:absolute;
+  top:50%;
+  left:50%;
+}
+
+.footer{
+  display: flex;
+  color: #515356;
+  margin-top: 1rem;
+  margin-left: 50px;
+  background-color: #ededed;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 92%;
+  height: 40px;
+  justify-content: space-between;
+}
+
+.card-grid {
+  margin-left: 200px;
+  margin-right: 100px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: .25rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+  background-color: white;
+  transform-style: preserve-3d;
+  transition: 150ms;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+}
+
+.footer-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .description {
+  padding: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.pagination a {
+  padding: 10px;
+  border: 1px solid #47a7de;
+  color: #47a7de;
+}
+
+.pagination__link {
+  font-weight: bold;
+}
+
+.pagination__link--active a {
+  color: #fff;
+  background: #47a7de;
+}
+
+.pagination__link--disabled a {
+  color: rgb(198, 197, 202);
+  border: 1px solid rgb(198, 197, 202);
+}
+
+#contact-form {
+  margin-left: 200px;
+}
